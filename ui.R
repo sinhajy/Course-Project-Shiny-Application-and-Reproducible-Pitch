@@ -6,10 +6,9 @@ shinyUI(pageWithSidebar(
   # Application title
   headerPanel("Miles Per Gallon"),
   
-  # Sidebar with controls to select the variable to plot against mpg
-  # and to specify whether outliers should be included
+  # Sidebar with controls to select the variable to plot against mpg and to specify whether outliers should be included
   sidebarPanel(
-    selectInput("variable", "Variable:",
+    selectInput("variable", "Input Variable:",
                 list("Cylinders" = "cyl", 
                      "Transmission" = "am", 
                      "Gears" = "gear")),
